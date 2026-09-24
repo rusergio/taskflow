@@ -34,8 +34,12 @@ export default function HomeScreen() {
             })}
           </ThemedText>{' '}
           to open developer tools.
-        </ThemedText>
-      </ThemedView>
+        </ThemedText>        {/* added login link */}
+        <Link href="/login">
+          <Link.Trigger>
+            <ThemedText type="link">Ir para login</ThemedText>
+          </Link.Trigger>
+        </Link>      </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <Link href="/modal">
           <Link.Trigger>
